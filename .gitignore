@@ -2,3 +2,6 @@
 .idea
 .DS_Store
 __pycache__
+
+# JavaScript/TypeScript
+/node_modules
