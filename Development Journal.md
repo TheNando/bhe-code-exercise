@@ -56,8 +56,15 @@ My goal was to find an implementation that was a good balance of elegance and pe
 
 ## Update - Day 2
 
-Taking another look at the project with fresh eyes, I decided to make two updates.
+Taking another look at the project with fresh eyes, I decided to make some updates.
 
 1. Swap out all the babel overhead for a simple two-line update to the npm scripts.
 2. I did replace all the babel deps with a single ts-jest dep. This is only used for providing TS compatibility to VS Code. The test script only needs tsc now.
 3. Adjust some comments. Add a small console log to inform about the upfront wait.
+4. And for the big update, I ported my solution to Golang...mostly.
+
+### Golang implementation
+
+I'm still new to Golang. I probably have fewer than 30 hours using it. I've done some leetcode-type exercises and completed a few tasks at work (implementing new API endpoints), but I still have much to learn. However, my TypeScript solution is pretty basic, structure-wise, so the only challenge I had porting to Go was getting the interface structure setup correctly. This is quite different from other languages I'm proficient in (JS, TS, C++, C#, Python) and I find it a bit intimidating. I manged to get it working with some Google-foo.
+
+The other big difference is that I did not pre-cache the prime data this time. I'll try again tomorrow to implement some more optimizations.
