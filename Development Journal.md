@@ -53,3 +53,11 @@ My goal was to find an implementation that was a good balance of elegance and pe
 - A caching or memoization strategy seems required for efficiency as the tests will run multiple assertions
 - Pre-allocating arrays may have a marginal benefit considering how large the data sets are
 - JS generators would seem pragmatic to yield/revisit long a running prime search. I also really like Douglas Crockford's generator-alternative pattern from his book "How JavaScript Works". However, I would end up abandoning this idea in favor of a more straight forward and compact solution.
+
+## Update - Day 2
+
+Taking another look at the project with fresh eyes, I decided to make two updates.
+
+1. Swap out all the babel overhead for a simple two-line update to the npm scripts.
+2. I did replace all the babel deps with a single ts-jest dep. This is only used for providing TS compatibility to VS Code. The test script only needs tsc now.
+3. Adjust some comments. Add a small console log to inform about the upfront wait.

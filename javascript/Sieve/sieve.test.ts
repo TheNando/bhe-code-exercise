@@ -1,4 +1,4 @@
-import { nthPrime } from "./sieve.ts";
+import { nthPrime } from "./sieve";
 
 describe("Sieve", () => {
   test("smoke test", () => {
